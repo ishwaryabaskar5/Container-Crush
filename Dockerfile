@@ -1,7 +1,8 @@
-FROM openjdk:1.8
-
-ADD ./target/product-0.0.1-SNAPSHOT.jar /usr/src/product-0.0.1-SNAPSHOT.jar
-
-WORKDIR usr/src
-
-ENTRYPOINT ["java","-jar","product-0.0.1-SNAPSHOT.jar"]
+FROM openjdk:8-jre-alpine
+ENV APP_FILE product-0.0.1-SNAPSHOT.jar
+ENV APP_HOME /usr/app
+EXPOSE 8080
+COPY target/$APP_FILE $APP_HOME/
+WORKDIR $APP_HOME
+ENTRYPOINT ["sh", "-c"]
+CMD ["exec java -jar $APP_FILE"]
