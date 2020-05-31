@@ -1,0 +1,9 @@
+com\containercrush\unbeatable\product\repository\ProductRepository.class
+com\containercrush\unbeatable\product\exception\ProductNotFoundException.class
+com\containercrush\unbeatable\product\service\ProductService.class
+com\containercrush\unbeatable\product\config\SwaggerConfig.class
+com\containercrush\unbeatable\product\model\Product.class
+com\containercrush\unbeatable\product\ProductServiceApplication.class
+com\containercrush\unbeatable\product\service\ProductServiceImpl.class
+com\containercrush\unbeatable\product\controller\ProductController.class
+com\containercrush\unbeatable\product\exception\ProductAlreadyExistsException.class
